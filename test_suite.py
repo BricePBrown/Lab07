@@ -37,9 +37,9 @@ while True:
   for i in range(1,51):
     lightValue = mcp.read_adc(0)
     if lightValue < LIGHT_THRESHOLD:
-      print(lightValue + " dark")
+      print(str(lightValue) + " dark")
     else:
-       print(lightValue + " bright")
+       print(str(lightValue) + " bright")
     time.sleep(0.1)
 
   # Test 3, flicker 4 times with a 200ms interval
@@ -50,7 +50,7 @@ while True:
   tapped = False
   for i in range(1,51):
     soundValue = mcp.read_adc(0)
-    print(soundValue)
+    print(str(soundValue))
     if soundValue > SOUND_THRESHOLD:
        GPIO.output(chan_list, GPIO.HIGH)
        tapped = True
