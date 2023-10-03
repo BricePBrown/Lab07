@@ -33,7 +33,7 @@ while True:
   blink_led(5, .5)
 
   # Test 2, for 5 seconds read light sensor
-  LIGHT_THRESHOLD = 500
+  LIGHT_THRESHOLD = 20
   for i in range(1,51):
     lightValue = mcp.read_adc(0)
     if lightValue < LIGHT_THRESHOLD:
@@ -46,7 +46,7 @@ while True:
   blink_led(4, .2)
 
   # Test 4, for 5 seconds read sound sensor
-  SOUND_THRESHOLD = 800
+  SOUND_THRESHOLD = 70
   tapped = False
   for i in range(1,51):
     soundValue = mcp.read_adc(0)
