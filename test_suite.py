@@ -49,7 +49,7 @@ while True:
   SOUND_THRESHOLD = 70
   tapped = False
   for i in range(1,51):
-    soundValue = mcp.read_adc(0)
+    soundValue = mcp.read_adc(1)
     print(str(soundValue))
     if soundValue > SOUND_THRESHOLD:
        GPIO.output(chan_list, GPIO.HIGH)
