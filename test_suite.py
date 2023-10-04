@@ -46,7 +46,7 @@ while True:
   blink_led(4, .2)
 
   # Test 4, for 5 seconds read sound sensor
-  SOUND_THRESHOLD = 400
+  SOUND_THRESHOLD = 1000
   tapped = False
   for i in range(1,51):
     soundValue = mcp.read_adc(1)
