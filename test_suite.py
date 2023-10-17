@@ -1,3 +1,6 @@
+# Brice Brown
+# Lab 7 - ADC
+
 import time
 import RPi.GPIO as GPIO
 import Adafruit_GPIO.SPI as SPI
